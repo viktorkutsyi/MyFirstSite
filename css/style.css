@@ -1,0 +1,416 @@
+@import url(reset.css);
+
+body{
+    background-color: #d7d7d7;
+    background-image: url("../images/bamboo.jpg");
+    background-repeat: repeat;
+    
+}
+
+
+#wrapper{
+margin:0 auto;
+min-width: 650px; /**wrapper включит полосу прокрутки и не даст уменьшаться сайту чем минимально допустимая штирина**/
+max-width: 950px; /**браузер не даст ростянуть сайт больше чем на 1100px по ширине**/
+
+box-shadow: -1px 1px 20px 0px #000000;
+background-color: #ffffff;
+border: 1px;
+border: 3px solid #8B0000;
+border-radius: 10px;
+margin-top: 10px;
+}
+
+/*НАЧАЛО БЛОКА ХЕДЕР*/
+
+#header{
+    position: relative;
+    height:75px;
+    width:950px;
+    background-color: #8d0000;
+    
+}
+
+#header a{
+    display:block;
+    height:75px;
+    width:950px;
+    cursor: pointer;
+    position:absolute;  
+    z-index: 1;  
+}
+
+
+#logo{
+    height:70px;
+    width:75px;
+    top: 1px;
+    left:10px;
+    position:absolute;
+    background-image: url("../images/zhongwen4.png");
+    background-repeat: no-repeat;
+
+}
+
+#info{
+    position:relative;
+    
+}
+
+#phone1{
+    width:20px;
+    height:20px;
+    background-image: url("../images/phone1.png");
+    position:absolute;
+    bottom:3px;
+    left:390px;
+}
+
+#name, #title, #phone{
+    text-align:center;
+    color:#ffffff;
+    padding:0;
+    margin:0;
+    }
+
+#name{
+    text-transform:uppercase;
+    font: 24px bold;
+    padding-top:0;
+    letter-spacing: 5px;
+    
+}
+#title, #phone{
+    text-transform:uppercase;
+    font: 16px bold;
+    
+    
+}
+
+
+#photo{
+    height:75px;
+    width:75px;
+    background-image: url("../images/me1.png");
+    position:absolute;
+    top:0;
+    right:10px;
+}
+/*КОНЕЦ БЛОКА ХЕДЕР*/
+
+#devider{
+    height:2px;
+    background-color: #ffffff;
+}
+
+/*НАЧАЛО БЛОКА СЛАЙДШОУ*/
+
+#slideShow{
+    height: 300px;
+    outline: 1px solid #cccccc;
+}
+
+#s3slider {
+   width: 950px; /* important to be same as image width */
+   height: 300px; /* important to be same as image height */
+   position: relative; /* important */
+   overflow: hidden; /* important */
+}
+
+#s3sliderContent {
+   width: 950px; /* important to be same as image width or wider */
+   position: absolute; /* important */
+   top: 0; /* important */
+   margin-left: 0; /* important */
+}
+
+.s3sliderImage {
+   float: left; /* important */
+   position: relative; /* important */
+   display: none; /* important */
+}
+
+.s3sliderImage span {
+    display: none; /* important */
+    }
+.clear {
+   clear: both;
+}
+/*Начало блока  КОНТЕНТ*/
+#sideBarL{
+    width: 210px;
+    float: left;
+
+}
+#sideBarR{
+    width: 210px;
+    float: right;
+}
+
+
+#content{
+    margin:  0 210px;
+    width: 530px;
+    
+ }
+ 
+ #content h2{
+    font-size:24px;
+    font-weight:bold;
+    color:#8b0000;
+    text-align: center;
+    padding: 0 5px 10px 5px;
+}
+
+#content p{
+    margin: 0 10px 10px 10px;
+    text-indent: 30px;
+    text-align:justify;
+    line-height:1.3;
+    font-size:14px;
+    color: #000000;
+    
+}
+
+#content ul li{
+    margin: 10px 0 10px 60px;
+    list-style-type: square;
+    
+}
+
+
+#imageSupplier, #imageQc, #imageTr, #imageExhibition, #imageDhl, #imageInspection{
+    margin:10px;
+    position:relative;
+    width:510px;
+    height:510px;
+    bottom: 0;
+    outline: 1px solid #cccccc;
+    border: 2px solid #8B0000;
+
+    
+}
+#imageSupplier{
+    background-image: url("../images/supplier.jpg");
+}
+
+
+#imageQc{
+    background-image: url("../images/qc.jpg");
+    
+}
+
+#imageTr{
+    background-image: url("../images/tr.jpg");
+  
+}
+#imageExhibition{
+    background-image: url("../images/exhibition.jpg");
+  
+}
+
+#imageDhl{
+    background-image: url("../images/dhl.jpg");
+  
+}
+
+table{
+    width:510px;
+    border-collapse:collapse;
+    margin-left: 10px;;
+    
+}
+
+table, td, th{
+    border: 1px solid #cccccc;
+    text-align:center;
+}
+td, th{
+  height:30px;
+  padding: 5px;
+  vertical-align: middle;  
+ }
+ 
+ th{
+    background-color: #fefecc;
+ }
+ 
+ tr.blue td{
+    background-color: #CEEFFF;
+ }
+#clear{
+    clear:both;
+}
+
+#headerL, #headerR{
+    width:210px;
+    height:20px;
+    background-color: #8b0000;
+    border-radius: 5px;
+    
+}
+
+#headerL h1, #headerR h1{
+    text-align: center;
+    color:#ffffff;
+    text-transform: uppercase;
+    padding-top:1px;
+    font: 16px bold;
+    
+}
+
+
+#menu ul li a{
+  /*transition: all 0.3s ease 0s;*/
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  color:#8B0000;
+  text-transform:uppercase;
+  font-size: 12px;
+  text-align: center;
+  border-bottom: 1px dashed;  
+}
+
+#menu ul li a:hover {
+    background-color: #8B0000;
+    border-left: 1px solid #111111;
+    font-size: 12px; 
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+#contuct{
+    margin:10px 10px;
+}
+#contuct li{
+    margin: 5px 0;
+    padding-left:25px;
+    display:block;
+    height:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+#contuct li a{
+     text-decoration:none;
+}
+
+.mail{
+background-image:url("../images/mail1.png");
+background-repeat: no-repeat;
+}
+.whatsapp{
+background-image:url("../images/whatsapp21.png");
+background-repeat: no-repeat;
+}
+
+.mobile{
+background-image:url("../images/mobile.png");
+background-repeat: no-repeat;
+}
+
+.skype{
+background-image:url("../images/skype.png");
+background-repeat: no-repeat;
+}
+
+.wechat{
+background-image:url("../images/wechat1.png");
+background-repeat: no-repeat;
+}
+
+#form{
+    width:190px;
+    height:300px;
+    outline: 0px solid #cccccc;
+    margin:30px 10px 10px 10px;
+  
+}
+
+#form legend{
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    color:#8b0000;
+}
+
+#text, #name1, #e-mail{
+    background-color: #d7d7d7;
+    border-radius:5px;
+    width:190px;
+}
+#button{
+    margin: 5px 45px 5px 50px;
+    
+}
+
+
+
+#footer{
+    height:50px;
+    width:950px;
+    background-color: #8b0000;
+    position:relative;
+    
+}
+#globe{
+    width:40px;
+    height:40px;
+    position: relative;
+    top:10px;
+    left:30px;
+}
+#sign{
+    position: absolute;
+    top:10px;
+    left:400px;
+}
+#sign p{
+    text-align:center;
+    color:#ffffff;
+}
+
+#footerSocial{
+    position:absolute;
+    top:10px;
+    right:30px;
+    height:33px;
+    width:131px;
+    outline: 0px solid #cccccc;
+
+}
+#footerSocial li{
+    display: block;
+    float:left;
+    height:33px;
+   }
+#s1{
+    width:33px;
+    background-image: url("../images/s1.png");
+}
+
+#s2{
+    width:33px;
+    background-image: url("../images/s2.png");
+}
+
+#s3{
+    width:31px;
+    background-repeat: no-repeat;
+    background-image: url("../images/s3.png");
+    
+}
+
+#s4{
+    width:33px;
+    background-image: url("../images/s4.png");
+}
+
+#footerSocial li a{
+      height: 33px;
+      display:block;
+      cursor: pointer;
+}
